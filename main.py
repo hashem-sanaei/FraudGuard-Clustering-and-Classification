@@ -1,15 +1,4 @@
-"""A) Clustering
-- 1. Data Preparation:
-   • Download the dataset.
-   • Examine the data structure and available information.
-   
-- 2. Clustering:
-   • Use a clustering algorithm like K-Means.
-   • Evaluate the results, and if clusters are obtained, analyze these clusters.
-
-- 3. Results Analysis:
-   • Examine the clustering results and identify the most significant patterns and characteristics of each cluster."""
-
+
 # Importing necessary libraries
 import numpy as np
 import pandas as pd
@@ -95,11 +84,7 @@ print(cm)
 print(classification_report(y_test, y_pred))
 print('Accuracy:', accuracy_score(y_test, y_pred))
 
-"""Results Analysis:
-• Compare the clustering and classification results.
-• Evaluate the effectiveness of each method in fraud detection.
-Exercise Evaluation Criteria
-"""
+
 # Clustering Evaluation
 silhouette_avg = silhouette_score(X_train.drop('Cluster', axis=1), y_kmeans)
 print("For n_clusters = 2 The average silhouette_score is :", silhouette_avg)
